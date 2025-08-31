@@ -8,8 +8,12 @@ parameter in your program.
 #include <stdlib.h>
 #include <time.h>
 
-void rand_string (char*s , size_t size)
+char rand_string (char* c , size_t size)
 {
+    rand_num = srand(time(NULL));
 
+    for (int i = 0, i < size_t, i++){
+        int rando = rand() % 26 + 1;
+    }
 }
 
