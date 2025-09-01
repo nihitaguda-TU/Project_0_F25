@@ -10,13 +10,10 @@ parameter in your program.
 
 void rand_string (char *s, size_t size)
 {
-    char *c = malloc(size +1)
-    rand_num = srand(time(NULL));
-
-    for (int i = 0, i < size, i++){
-        int rando = rand() % 26 + 1;
-        c[i] = 'A' + (n - 1);
+    for (size_t i = 0, i < size, i++){
+        int rando = rand() % 26;
+        s[i] = 'A' + rando;
     }
-    return c
+    return s;
 }
 
