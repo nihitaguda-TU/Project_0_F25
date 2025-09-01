@@ -8,12 +8,15 @@ parameter in your program.
 #include <stdlib.h>
 #include <time.h>
 
-char rand_string (char* c , size_t size)
+void rand_string (char *s, size_t size)
 {
+    char *c = malloc(size +1)
     rand_num = srand(time(NULL));
 
-    for (int i = 0, i < size_t, i++){
+    for (int i = 0, i < size, i++){
         int rando = rand() % 26 + 1;
+        c[i] = 'A' + (n - 1);
     }
+    return c
 }
 
